@@ -1,0 +1,42 @@
+{% set name = "django-admin-sortable2" %}
+{% set version = "2.1.4" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 7dc08ff0fbce5859502f809d108c0495f3b0d94609269eaedbb1237e03084acb
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - django >=4.0
+    - pip
+    - python
+  run:
+    - django >=4.0
+    - python
+
+test:
+  imports:
+    - adminsortable2
+    - adminsortable2.management
+    - adminsortable2.management.commands
+
+about:
+  home: "https://github.com/jrief/django-admin-sortable2"
+  license: MIT
+  license_family: MIT
+  license_file:
+  summary: "Generic drag-and-drop sorting for the List, the Stacked- and the Tabular-Inlines Views in the Django Admin"
+  doc_url:
+  dev_url:
+
+extra:
+  recipe-maintainers:
+    - https://github.com/gb119
