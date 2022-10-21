@@ -1,8 +1,4 @@
-# Conda Packaging Template
+# Django-Admin-Sortable2-package
 
-This template repository contains a default setup for building new conda packages via agithub action.
+Builds the pacakge for django-admin-sortable2: Generic drag-and-drop ordering for objects in the Django admin interface
 
-## Contents
-
-1. A github action to build conda packages and upload them for MacOS-X, Linux, Windows 74bit pythons v 3/6-3.9
-2. A build environment
