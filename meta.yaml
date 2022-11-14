@@ -10,16 +10,16 @@ source:
   sha256: f96044003176c6684c5f969792ca833a505d654fa0f7b24232a0a610e4332a53
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - django >=4.0
+    - django >=2.2
     - pip
     - python
   run:
-    - django >=4.0
+    - django >=2.2
     - python
 
 test:
