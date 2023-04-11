@@ -1,5 +1,5 @@
 {% set name = "django-admin-sortable2" %}
-{% set version = "1.0.4" %}
+{% set version = "2.1.5" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f96044003176c6684c5f969792ca833a505d654fa0f7b24232a0a610e4332a53
+  sha256: b435c696ff410d1fc108684bb3f7de34c5f6dd24bb08dc15ff7d9a0b9161c8c7
 
 build:
   number: 1
@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - django >=2.2
+    - django >=4.0
     - pip
     - python
   run:
-    - django >=2.2
+    - django >=4.0
     - python
 
 test:
