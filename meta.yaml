@@ -1,13 +1,13 @@
 {% set name = "django-admin-sortable2" %}
-{% set version = "2.1.10" %}
+{% set version = "2.2.8" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 3756b02c7d09c5b37efe657718d5aae2b75f46fd01bbfe1c39d4e60651019d79
+  url: "https://files.pythonhosted.org/packages/d4/76/8af26a825442fb33688c820cf79e4b769d8c4b976a2ddaa7434b96706e05/django_admin_sortable2-2.2.8.tar.gz"
+  sha256: 59dfd7ced63e66adfb471b2a4d89ba3faae49c0148827047c8cf65759fc54c9e
 
 build:
   noarch: python
